@@ -3,7 +3,7 @@ import functools
 import hashlib
 import unittest
 
-import api
+import src.api as api
 
 
 def cases(cases):
@@ -93,10 +93,10 @@ class TestSuite(unittest.TestCase):
         [
             {},
             {"phone": "79175002040"},
-            {"phone": "89175002040", "email": "stupnikov@otus.ru"},
-            {"phone": "79175002040", "email": "stupnikovotus.ru"},
-            {"phone": "79175002040", "email": "stupnikov@otus.ru", "gender": -1},
-            {"phone": "79175002040", "email": "stupnikov@otus.ru", "gender": "1"},
+            {"phone": "89175002040", "email": "student@otus.ru"},
+            {"phone": "79175002040", "email": "studentotus.ru"},
+            {"phone": "79175002040", "email": "student@otus.ru", "gender": -1},
+            {"phone": "79175002040", "email": "student@otus.ru", "gender": "1"},
             {
                 "phone": "79175002040",
                 "email": "stupnikov@otus.ru",
